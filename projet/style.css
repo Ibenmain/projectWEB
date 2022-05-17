@@ -242,3 +242,87 @@ main .insights > div.expenses span {
 main .insights > div.income span {
     background: rgb(17, 250, 247);
 }
+
+main .insights > div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights h3 {
+    margin: 1rem 0 0.6rem;
+    font-size:  1rem;
+}
+
+main .insights .progress {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+main .insights svg {
+    width: 7rem;
+    height: 7rem;
+}
+
+main .insights svg circle {
+    fill: none;
+    stroke: rgb(159, 131, 207);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+}
+
+main .insights .sales svg circle {
+    stroke-dashoffset: 20;
+    stroke-dasharray: 200;
+}
+
+main .insights .expenses svg circle {
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+
+main .insights .income svg circle { 
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+}
+
+main .insights .progress .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .insights small {
+    margin-top: 1,3rem;
+    display: block;
+}
+
+/*==================== RECENT ORDERS ====================*/
+main .recent-order {
+    margin-top: 2rem;
+}
+
+main .recent-order h2 {
+    margin-top: 0.8rem;
+}
+
+main .recent-order table {
+    background:rgb(9, 169, 163);
+    width: 100%;
+    border-radius: 50px;
+    padding: 20%;
+    text-align: center;
+    box-shadow: inset;
+    transition: all 300ms ease;
+}
+
